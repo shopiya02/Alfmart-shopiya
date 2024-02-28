@@ -1,0 +1,11 @@
+<?php
+
+use CodeIgniter\Router\RouteCollection;
+
+/**
+ * @var RouteCollection $routes
+ */
+$routes->setAutoRoute(true);
+$routes->get('/', 'Home::index');
+$routes->post('/proses/login','Home:proses');
+$routes->get('/home','Home::home');
